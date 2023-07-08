@@ -1,0 +1,8 @@
+.profile-pic{
+    position: absolute;
+    top: 12.5rem;
+    left: 1rem;
+}
+.profile-avatar{
+    border: 3px solid #121212;
+}
