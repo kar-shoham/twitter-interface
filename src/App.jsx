@@ -8,7 +8,7 @@ import Post from './components/Pages/Post';
 import Profile from './components/Pages/Profile';
 import Followers from './components/Pages/Followers';
 import Following from './components/Pages/Following';
-
+import Bookmark from './components/Pages/Bookmark'
 
 const darkTheme = createTheme({
   palette: {
@@ -28,6 +28,7 @@ const App = () => {
               <Route exact path='/' element={<Home />} />
               <Route path='/lol' element={<Post />} />
               <Route path='/:id' element={<Profile />} />
+              <Route path='/bookmarks' element={<Bookmark />} />
               <Route path='/:id/followers' element={<Followers />} />
               <Route path='/:id/following' element={<Following />} />
             </Routes>
@@ -37,7 +38,7 @@ const App = () => {
         </Box>
       </Router>
     </ThemeProvider>
-    
+
   )
 }
 
